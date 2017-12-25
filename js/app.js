@@ -7,7 +7,7 @@ toggler.addEventListener("click", function(){
 });
 
 window.addEventListener("resize", function(){
-    if(nav.classList.contains("isvisible") && window.innerWidth > 768){
+    if(nav.classList.contains("isvisible") && window.innerWidth > 960){
         nav.classList.remove("isvisible");
     }
 });
