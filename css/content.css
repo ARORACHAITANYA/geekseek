@@ -1,7 +1,7 @@
 .grid{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr 4fr;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 270px;
     grid-gap: 1em;
 }
 .thumbnail{
