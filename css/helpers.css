@@ -1,0 +1,36 @@
+/* hero area */
+.hero{
+    background-color: #e0e0e0;
+    grid-column: 1 / -1;
+    box-sizing: border-box;
+    padding: 2em;
+}
+.hero-head{
+    font-size: 3em;
+}
+/* thumbnails */
+.content{
+    box-sizing: border-box;
+    background-color: #fff;
+    /* border: 1px solid #e0e0e0; */
+    display: flex;
+    padding: .3em;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px #424242;
+}
+.content > .thumbnail{
+
+}
+.content > .thumbnail > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.desc{
+    color:#303030;
+    box-sizing: border-box;
+    padding:1em;
+}

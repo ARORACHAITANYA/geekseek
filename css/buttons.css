@@ -15,6 +15,7 @@
     color: #212121;
 }
 .btn{
+    display: block;
     outline: none;
     border: none;
     font-weight: bold;
@@ -26,19 +27,20 @@
 }
 .big{
     
-    padding: 2em 5em 2em 5em;
+    padding: 1em 0 1em 0;
+    width:20%;
 }
 .mid{
-    padding: 1em 2em 1em 2em;
+    padding: 1em 0 1em 0;
+    width:15%;
 }
 .sm{
-    padding: .5em 2em .5em 2em;
+    padding: 1em 0 1em 0;
+    width: 10%;
 }
 .btn-block{
-    padding: 1em 2em 1em 2em;
-    display: block;
     width: 100%;
-
+    padding: 1em 0 1em 0;
 }
 
 /* interactions */
@@ -53,4 +55,27 @@
     z-index: 999;
 }
 .btn::-moz-focus-inner {border:0;}
+/* media queries */
 
+@media (max-width:960px){
+    .big{
+        width:40%;
+    }
+    .mid{
+        width:30%;
+    }
+    .sm{
+        width: 20%;
+    } 
+}
+@media (max-width:640px){
+    .big{
+        width:80%;
+    }
+    .mid{
+        width:60%;
+    }
+    .sm{
+        width: 40%;
+    } 
+}
