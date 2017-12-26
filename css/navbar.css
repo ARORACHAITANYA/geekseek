@@ -17,7 +17,6 @@
 }
 .navigation{
     display: flex;
-
 }
 .navigation > li{
     list-style: none;
@@ -33,9 +32,6 @@
     width:100%;
     display: flex;
     justify-content: space-between;
-}
-.logo{
-    font-size: 1.3em;
 }
 .logo > a{
     color: #f2f2f2;
