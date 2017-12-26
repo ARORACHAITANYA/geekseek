@@ -2,7 +2,12 @@
     box-sizing: border-box;
     width:90%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 1em;
+}
+@media (max-width:960px){
+    .container{
+        margin-top: 50px;
+    }
 }
 a:focus{
     outline: none;
