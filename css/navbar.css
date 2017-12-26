@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     padding: 1em 1em 1em 0;
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 9999;
 }
 .nav > .container{
     width:90%;
@@ -59,9 +63,6 @@
         align-items: center;
         padding-bottom: 0;
         padding-right: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
     }
     .nav > .container{
         flex-direction: column;

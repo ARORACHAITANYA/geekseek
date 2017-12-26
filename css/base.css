@@ -4,11 +4,6 @@
     margin: auto;
     margin-top: 1em;
 }
-@media (max-width:960px){
-    .container{
-        margin-top: 70px;
-    }
-}
 a:focus{
     outline: none;
     border: none;
