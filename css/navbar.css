@@ -10,8 +10,6 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
-    postion: fixed;
-    top: 0;
 }
 .navigation{
     display: flex;
@@ -25,9 +23,6 @@
     color: #f2f2f2;
     font-weight: bold;
     
-}
-.navigation a.active {
-    border-bottom: 3px solid red;
 }
 .navigation > li:nth-child(4){
     padding-right: 0;
@@ -64,14 +59,14 @@
         align-items: center;
         padding-bottom: 0;
         padding-right: 0;
+        position: fixed;
+        top: 0;
     }
     .nav > .container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        position:fixed;
-        top: 0;
     }
     .navigation{
         flex-direction: column;
