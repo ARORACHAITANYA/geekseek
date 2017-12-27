@@ -426,6 +426,7 @@ input[type = text]:focus{
     padding: 1em 0 1em 0;
 }
 #moveToTop{
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 10px;
