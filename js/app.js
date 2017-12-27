@@ -11,10 +11,10 @@ window.addEventListener("resize", function(){
         nav.classList.remove("isvisible");
     }
 });
-//On scrolling down 20px the button appears
+//On scrolling down 50px the button appears
 window.onscroll = function() {scrollFunction()};
 function scrollFunction(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
         document.getElementById("moveToTop").style.display = "block";
     } else{
         document.getElementById("moveToTop").style.display = "none";
