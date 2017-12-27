@@ -1,0 +1,94 @@
+.transparent-box-2{
+  position: absolute;
+  width: 300px;
+  overflow: auto;
+  top: 10px;
+  right: 50px;
+  bottom: 10px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  z-index: 99;
+}
+.transparent-box-1{
+  display: none;
+}
+.slides{
+  display: none;
+}
+.slide-img{
+  vertical-align: middle;
+  width: 100%;
+}
+.slideshow-container {
+  position: relative;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+.prev{
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+.caption-text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+.img-number{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+  from{opacity: .4} 
+  to{opacity: 1}
+}
+@keyframes fade{
+  from{opacity: .4} 
+  to{opacity: 1}
+}
+@media only screen and (max-width: 768px){
+  .caption-text{font-size: 12px}
+  .transparent-box-2{display: none;}
+  .transparent-box-1{
+    display: block;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    text-align: center;
+  }
+}
