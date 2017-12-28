@@ -1,20 +1,17 @@
-.transparent-box-2{
+.transparent-box{
   position: absolute;
-  width: 300px;
+  width: 30%;
   overflow: auto;
   top: 10px;
   right: 50px;
   bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid white;
   border-radius: 5px;
   background-color: rgba(0,0,0,0.5);
   color: white;
   text-align: center;
   z-index: 99;
-}
-.transparent-box-1{
-  display: none;
 }
 .slides{
   display: none;
@@ -29,10 +26,8 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -51,10 +46,10 @@
 }
 .caption-text{
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 18px;
+  padding: 8px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   text-align: center;
 }
@@ -80,15 +75,27 @@
   to{opacity: 1}
 }
 @media only screen and (max-width: 768px){
-  .caption-text{font-size: 12px}
-  .transparent-box-2{display: none;}
-  .transparent-box-1{
-    display: block;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
+  .transparent-box{
+    position: inherit;
+    width: 100%;
+    height: 125px;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    border-color: black;
     background-color: rgba(255,255,255,0.5);
     color: black;
-    text-align: center;
+  }
+  .prev, .next{
+    padding: 8px 16px 8px 16px;
+  }
+  .caption-text{
+    bottom: 125px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px){
+  .prev, .next{
+    top: 50%;
+    margin-top: -22px;
   }
 }
