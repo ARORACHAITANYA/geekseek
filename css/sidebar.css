@@ -1,0 +1,23 @@
+.sidebar{
+	position: fixed;
+	z-index: 999;
+}
+.sidebar a{
+	position: absolute;
+	z-index: 999;
+	left: -100px;
+	transition: 0.3s linear;
+	padding: 15px;
+	margin: 30px 0 0 0;
+	width: 150px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+}
+.sidebar a:hover{
+	left: 0;
+}
+.side-icon{
+	margin-left: 50px;
+}
