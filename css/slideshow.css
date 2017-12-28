@@ -87,6 +87,7 @@
   }
   .prev, .next{
     padding: 8px 16px 8px 16px;
+    bottom: 125px;
   }
   .caption-text{
     bottom: 125px;
