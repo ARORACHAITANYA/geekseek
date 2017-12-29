@@ -1,30 +1,32 @@
 .sidebar{
-	position: absolute;
+	position: fixed;
+	top: 15px;
+	z-index: 999;
 }
 .side-btn{
 	display: flex;
-	position: fixed;
-	z-index: 999;
+	position: relative;
 	left: -105px;
-	transition: 0.3s linear;
+	transition: 0.5s linear;
 	padding: 15px;
-	margin: 25px 0 0 0;
+	margin: 0;
 	width: 150px;
-	background-color: rgba(0,0,0,0.5);
-	font-size: 20px;
+	background-color: #03A9F4;
+	font-size: 25px;
 	color: white;
-	border-radius: 0 5px 5px 0;
+	box-shadow: 8px 8px 8px grey;
 }
 .side-btn:hover{
 	left: 0;
 }
-.link-text{
-	width: 100%;
+.side-btn-text{
+	width: 90%;
 	text-align: left;
 }
-.link-icon{
-	width: 100%;
+.side-btn-icon{
+	width: 10%;
 	text-align: right;
+	margin-right: 5px;
 }
 @media only screen and (max-width: 768px){
 	.sidebar{
