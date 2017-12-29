@@ -99,4 +99,7 @@
     .nav{
         display: none;
     }
+    .rest-page{
+        margin-left: 4%;
+    }
 }
