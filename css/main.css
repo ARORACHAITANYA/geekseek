@@ -708,6 +708,8 @@ input[type = text]:focus{
 	overflow: hidden;
 	width: 100px;
 	height: 100px;
+        -ms-flex-item-align: center;
+        align-self: center;
 }
 .icon{
 	position: relative;
@@ -716,7 +718,7 @@ input[type = text]:focus{
 	width: 90%;
 	height: 90%;
 	overflow: hidden;
-    cursor: pointer;
+    	cursor: pointer;
 }
 .icon div{
 	position: absolute;
