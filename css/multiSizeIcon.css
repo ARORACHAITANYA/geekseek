@@ -29,6 +29,8 @@
 	overflow: hidden;
 	width: 100px;
 	height: 100px;
+        -ms-flex-item-align: center;
+        align-self: center;
 }
 .icon{
 	position: relative;
