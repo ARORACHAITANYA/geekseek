@@ -705,25 +705,16 @@ input[type = text]:focus{
 	background-color: #18ffff;
 }
 .icon-container{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-item-align: center;
-	    align-self: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	width: 100px;
-	height: 100px;
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
 }
 .icon{
 	position: relative;
-	margin-left: 16%;
-	width: 80%;
-	height: 80%;
+	margin-left: 14%;
+	margin-top: 5%;
+	width: 90%;
+	height: 90%;
 	overflow: hidden;
     cursor: pointer;
 }
@@ -755,8 +746,8 @@ input[type = text]:focus{
 	top: 13%;
 	right: 12.6%;
 	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 	z-index: 99;
 }
 .gbar{
@@ -768,7 +759,7 @@ input[type = text]:focus{
 }
 .frame-back{
 	border-radius: 0 0 15% 15%;
-	width: 81%;
+	width: 80.8%;
 	height: 38.6%;
 	top: 28.8%;
 	z-index: 2;
