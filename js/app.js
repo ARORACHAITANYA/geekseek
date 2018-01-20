@@ -60,3 +60,8 @@ function changeSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+//folder expansion
+function expand(x){
+    x.classList.toggle("col-12");
+    x.classList.toggle("expand");
+};
