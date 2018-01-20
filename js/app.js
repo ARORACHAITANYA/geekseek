@@ -12,9 +12,11 @@ window.addEventListener("resize", function(){
     }
 });
 //animation from hamburger to cross
-function makeCross(x) {
-    x.classList.toggle("change");
-}
+var clickToggle = document.querySelector(".toggler");
+var addChange = document.querySelector(".hamburger");
+clickToggle.addEventListener("click", function(){
+    addChange.classList.toggle("change");
+});
 //On scrolling down 150px the button appears
 window.onscroll = function() {scrollFunction()};
 function scrollFunction(){
