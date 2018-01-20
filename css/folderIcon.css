@@ -1,0 +1,113 @@
+.space-head{
+	border-bottom: 2px solid #e0e0e0;
+	border-radius: 0 0 10px 10px;
+}
+.space{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: .3em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+}
+.left-panel{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.right-panel{
+	display: none;
+}
+.icon-container{
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	-ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+	    align-self: center;
+	background-color: #f3f3f3;
+}
+.folder{
+	position: relative;
+	width: 80%;
+	height: 60%;
+	left: 5%;
+	top: 22%;
+	background-color: #f57f17;
+	border-radius: 0px 5% 5% 5%;
+	cursor: pointer;
+}
+.folder:before{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 12%;
+	top: -11%;
+	left: 0;
+	background-color: #f57f17;
+	border-radius: 25% 25% 0 0;
+}
+.folder:after{
+	position: absolute;
+	content: '';
+	width: 105%;
+	height: 85%;
+	top: 15%;
+	left: 3%;
+	-webkit-transform: skew(-6deg);
+	    -ms-transform: skew(-6deg);
+	        transform: skew(-6deg);
+	background: -webkit-radial-gradient(#fbc02d,#f9a825);
+	background: -o-radial-gradient(#fbc02d,#f9a825);
+	background: radial-gradient(#fbc02d,#f9a825);
+	border-radius: 5%;
+}
+.expand{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #f3f3f3;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+.expand .right-panel{
+	display: block;
+	width: 100%;
+	background-color: #fff;
+}
+.expand .right-panel a{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 100%;
+	color: blue;
+	text-align: left;
+	font-size: 1.2em;
+	padding: .3em;
+}
+.expand .right-panel a:hover{
+	background-color: #f3f3f3;
+}
+@media(max-width: 640px){
+	.expand{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+}
