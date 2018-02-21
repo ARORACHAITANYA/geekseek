@@ -65,3 +65,18 @@ function expand(x){
     x.classList.toggle("col-12");
     x.classList.toggle("expand");
 };
+//tab function
+function openTab(evt, sem){
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++){
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tablinks.length; i++){
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(sem).style.display = "block";
+    document.getElementById(sem).style.backgroundColor = "skyblue";
+    evt.currentTarget.className += " active";
+}
